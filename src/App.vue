@@ -9,6 +9,7 @@ export default {
 </script>
 
 <template>
-    <PageHome></PageHome>
-    <RouterView />
+    <div class="container">
+        <PageHome></PageHome>
+    </div>
 </template>
