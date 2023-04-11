@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/pages/Home.vue'
 import ThreadShow from '@/pages/ThreadShow.vue'
 import NotFound from '@/pages/NotFound.vue'
+import Forum from '@/pages/Forum.vue'
 import sourceData from '@/data.json'
 
 const routes = [
@@ -9,6 +10,13 @@ const routes = [
 		path: '/',
 		name: 'Home',
 		component: Home
+	},
+
+	{
+		path: '/forum/:id',
+		name: 'Forum',
+		component: Forum,
+		props: true
 	},
 
 	{
