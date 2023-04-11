@@ -16,7 +16,7 @@
                         :to="{ name: 'Forum', params: { id: forum.id } }"
                         class="text-xlarge"
                     >
-                        {{ forum.nme }}
+                        {{ forum.name }}
                     </router-link>
                     <p>{{ forum.description }}</p>
                 </div>

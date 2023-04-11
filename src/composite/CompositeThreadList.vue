@@ -32,11 +32,10 @@
 </template>
 
 <script setup>
-import sourceData from '@/data.json'
 import { reactive } from 'vue'
 
-const posts = reactive(sourceData.posts)
-const users = reactive(sourceData.users)
+const posts = reactive(this.$store.state.posts)
+const users = reactive(this.$store.state.users)
 
 defineProps({
     threads: { type: Array, required: true }

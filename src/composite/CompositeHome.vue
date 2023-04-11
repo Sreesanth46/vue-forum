@@ -9,14 +9,13 @@
 </template>
 
 <script setup>
-import sourceData from '@/data.json'
 import { reactive } from 'vue'
 // import { ref } from 'vue'
 
-const threads = reactive(sourceData.threads)
-const posts = reactive(sourceData.posts)
-const users = reactive(sourceData.users)
-// const posts = ref(sourceData.posts)
+const threads = reactive(this.$store.state.threads)
+const posts = reactive(this.$store.state.posts)
+const users = reactive(this.$store.state.users)
+// const posts = ref(this.$store.state.posts)
 
 // function postById(postId) {
 //     return posts.value.find((p) => p.id === postId)
