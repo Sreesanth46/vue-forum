@@ -4,6 +4,7 @@ import PageHome from '@/components/PageHome.vue'
 const routes = [
   {
     path: '/',
+    name: 'Home',
     component: PageHome
   }
 ]
