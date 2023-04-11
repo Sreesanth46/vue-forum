@@ -1,5 +1,4 @@
 <template>
-    <div class="hello">hello</div>
     <div v-for="thread in threads" :key="thread.id">
         <h2>{{ thread.title }}</h2>
         <div v-for="postId in thread.posts" :key="postId">
